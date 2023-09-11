@@ -1,0 +1,149 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: #ff7978;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container { 
+display:flex;
+width:80%;
+gap:40px;
+align-items: center;
+}
+
+.left-contents{
+    color: #fff;
+}
+
+.left-contents h2 {
+    font-size: 35px;  
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.left-contents p {
+    width: 400px;
+    line-height: 1.5;
+}
+
+/*right-contents styles*/
+
+.right-contents p.trial{
+   background:#545da3;
+   color: #fff;
+   width: 380px;
+   padding: 10px;
+   text-align: center;
+   border-radius: 8px;
+   margin-bottom: 15px;
+   box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.1);
+
+}
+.right-contents span{
+    font-weight: bolder;
+}
+.right-contents form { 
+    display: flex;
+    flex-direction: column; 
+    background: #fff;
+    width: 380px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.right-contents input{
+height: 40px;
+padding-left: 15px;
+
+}
+
+.right-contents form button {
+    height: 40px;
+    background-color: #37cc8a;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.right-contents form .eula{
+    text-align: center;
+    font-size: 8px;
+}
+
+.right-contents form .eula a{
+    color: #f3bebf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1160px){
+    .left-contents p {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 925px){
+    .container{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .left-contents h2 {
+        width: 600px;
+    }
+    .right-contents p.trial{
+        width: 600px;
+    }
+    .right-contents form {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 656px){
+    .left-contents h2{
+        width: 500px;
+    }
+    .left-contents p {
+        width: 500px;
+    }
+    .right-contents p.trial{
+        width: 500px;
+    }
+    .right-contents form{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 550px){
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+    .left-contents h2 {
+        width:400px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .left-contents p{
+        width: 350px;
+    }
+    .right-contents p.trial{
+        width: 350px;
+    }
+    .right-contents form{
+        width: 350px;
+    }
+
+    
+}
+    
